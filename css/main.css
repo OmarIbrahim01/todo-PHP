@@ -1,0 +1,131 @@
+body {
+	background-color: #eceff0;
+	margin: 0;
+	padding: 0;
+}
+
+body, input {
+	font: 1em "Open Sans", sans-serif;
+	color: #363639;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dashed #363639;
+}
+
+
+/*List*/
+.list {
+	background-color: #fff;
+	margin: 20px auto;
+	width: 100%;
+	max-width: 500px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 3px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.list .header {
+	font-family: "Shadows Into Light Two", cursive;
+	margin:  0 0 10px 0;
+}
+
+/*Items*/
+.items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.items li, 
+.item-add .input {
+	border:0;
+	border-bottom: 1px dashed #ccc;
+	padding: 15px 0;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.items .item.done{
+	text-decoration: line-through;
+}
+
+.items li:hover .done-button{
+	opacity: 0.6;
+} 
+.items li:hover .remove-button{
+	opacity: 0.8;
+}
+
+.input {
+	width: 100%;
+}
+
+/*Done button*/
+.items .done-button {
+	display: inline-block;
+	font-size: 0.8em;
+	background-color: #d9dfe1;
+	color: #363639;
+	padding: 3px 6px;
+	border: 0;
+	opacity: 0.4;
+	margin-left: 10px;
+}
+
+.items .remove-button {
+	display: inline-block;
+	font-size: 0.8em;
+	background-color: orange;
+	color: white;
+	padding: 3px 4px;
+	border: 0;
+	opacity: 0.6;
+	margin-left: 0;
+	float: right;
+	border-radius: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+/*Submit button*/
+
+.submit {
+	background-color: #fff;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	width: 100%;
+	margin-top: 10px;
+	box-shadow: 3px 3px 0 #ddd;
+}
+.submit:hover{
+	background-color: #d9dfe1;
+	color: #363639;
+}
+
+li {
+	text-decoration: none;
+}
+
+
+.button {
+	background-color: #fff;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	width: 100%;
+	margin-top: 10px;
+	box-shadow: 3px 3px 0 #ddd;
+}
+.button:hover{
+	background-color: #d9dfe1;
+	color: #363639;
+}
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
